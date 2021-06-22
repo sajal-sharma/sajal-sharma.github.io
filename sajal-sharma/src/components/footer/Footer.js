@@ -47,7 +47,7 @@ function Footer() {
 					</Col>
 
 					<Col sm={12} md={6}>
-						<p className="copyright">&#169; 2020 Sajal Sharma</p>
+						<p className="copyright">&#169; 2021 Sajal Sharma</p>
 					</Col>
 				</Row>
 			</Container>

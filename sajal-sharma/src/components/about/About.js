@@ -52,27 +52,36 @@ function About() {
 							</Typist>
 
 							<p className="intro mt-3">
-								Hey! My name is Sajal Sharma, and I am currently a fourth-year
-								student at the University of California, Berkeley . I am
-								currently pursuing a triple major in Computer Science,
-								Economics, and Data Science. Although I started programming just
-								a few years ago, I've always been in awe of the power and impact
-								of technology. Hoping to use my majors in a meaningful way, I'm
-								primarily interested in data analysis, artificial intelligence,
-								financial technology, and quantitative trading.
+								I recently graduated from the{" "}
+								<span className="underline">
+									University of California, Berkeley
+								</span>
+								, where I studied Computer Science, Economics, and Data Science.
+								Although I started programming just a few years ago, I've always
+								been in awe of the power and impact of technology. Hoping to use
+								my majors in a meaningful way, I'm primarily interested in
+								backend engineering and financial technology.
 							</p>
 
 							<p className="intro">
 								Always seeking to learn new skills and explore my interests, I'm
-								constantly working on projects both in and out of class. I am
-								also a member of a few student organizations on campus including
-								Upsilon Pi Epsilon, Computer Science Mentors, and RoboBears.
+								constantly working on projects both in and out of class. While I
+								was on campus, I was a member of a few student organizations
+								including Upsilon Pi Epsilon, Computer Science Mentors, and
+								RoboBears.
+							</p>
+
+							<p className="intro">
+								Aside from academics, I also enjoying playing basketball with my
+								friends and exploring the Bay Area. Over the quarantine, I also
+								became interested in photography.
 							</p>
 
 							<p className="intro mb-0">
-								Aside from academics, I also enjoying playing basketball with my
-								friends, exploring new sights around the Bay Area, tasting new
-								foods, and binging on movies.
+								Currently reading: <span className="underline">Apartment</span>{" "}
+								by Teddy Wayne,{" "}
+								<span className="underline">Invisible Women</span> by Caroline
+								Criado Perez
 							</p>
 						</div>
 					</Col>

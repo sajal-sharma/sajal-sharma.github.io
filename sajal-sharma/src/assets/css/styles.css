@@ -198,6 +198,10 @@
 	}
 }
 
+.underline {
+	background: linear-gradient(to top, #a0edfa 50%, transparent 0%);
+}
+
 /* Education */
 .header {
 	color: black !important;
@@ -258,7 +262,14 @@
 
 /* Photography */
 .image {
-	max-width: 45%;
+	max-width: 100%;
 	padding: 0px;
-	margin: 10px;
+}
+
+.location {
+	color: black;
+	font-family: "Open Sans", sans-serif;
+	font-size: x-small;
+	font-weight: 400;
+	text-align: right;
 }
