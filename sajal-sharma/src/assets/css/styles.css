@@ -167,7 +167,7 @@
 .headshot {
 	display: inline-block;
 	max-width: 100%;
-	border-radius: 8px;
+	border-radius: 5px;
 }
 
 /* @media (max-width: 768px) {
@@ -199,7 +199,14 @@
 }
 
 .underline {
+	color: black;
 	background: linear-gradient(to top, #a0edfa 50%, transparent 0%);
+}
+
+.underline:hover {
+	color: black;
+	background: linear-gradient(to top, #a0edfa 50%, transparent 0%);
+	text-decoration: none;
 }
 
 /* Education */

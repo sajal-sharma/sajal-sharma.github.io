@@ -51,8 +51,16 @@ function Photography() {
 					<Col sm={12}>
 						<p className="intro">
 							I recently became interested in photography. Here are some of my
-							favorite shots. Check out my{" "}
-							<span className="underline">Instagram</span> for more!
+							favorite photos! For more, you can visit my{" "}
+							<a
+								className="underline"
+								href="https://www.instagram.com/sightswithsaj/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Instagram
+							</a>
+							.
 						</p>
 					</Col>
 
@@ -60,14 +68,18 @@ function Photography() {
 						<Col className="mt-3" sm={12} md={6} lg={4}>
 							<img
 								className="image"
-								alt="Sajal Sharma"
+								alt="Mountain View, California"
 								src={mountain_view}
 							></img>
 							<span className="location">Mountain View, California</span>
 						</Col>
 
 						<Col className="mt-3" sm={12} md={6} lg={4}>
-							<img className="image" alt="Sajal Sharma" src={santa_cruz}></img>
+							<img
+								className="image"
+								alt="Santa Cruz, California"
+								src={santa_cruz}
+							></img>
 							<span className="location">
 								Santa Cruz Beach Boardwalk - Santa Cruz, California
 							</span>
@@ -76,7 +88,7 @@ function Photography() {
 						<Col className="mt-3" sm={12} md={6} lg={4}>
 							<img
 								className="image"
-								alt="Sajal Sharma"
+								alt="Mountain View, California"
 								src={shoreline_park}
 							></img>
 							<span className="location">
@@ -85,7 +97,11 @@ function Photography() {
 						</Col>
 
 						<Col className="mt-3" sm={12} md={6} lg={4}>
-							<img className="image" alt="Sajal Sharma" src={south_hall}></img>
+							<img
+								className="image"
+								alt="Berkeley, California"
+								src={south_hall}
+							></img>
 							<span className="location">
 								UC Berkeley - Berkeley, California
 							</span>
@@ -94,7 +110,7 @@ function Photography() {
 						<Col className="mt-3" sm={12} md={6} lg={4}>
 							<img
 								className="image"
-								alt="Sajal Sharma"
+								alt="Snoqualmie, Washington"
 								src={snoqualmire_falls}
 							></img>
 							<span className="location">
@@ -105,7 +121,7 @@ function Photography() {
 						<Col className="mt-3" sm={12} md={6} lg={4}>
 							<img
 								className="image"
-								alt="Sajal Sharma"
+								alt="Berkeley, California"
 								src={engineering_building}
 							></img>
 							<span className="location">
@@ -114,48 +130,56 @@ function Photography() {
 						</Col>
 
 						<Col className="mt-3" sm={12} md={6} lg={4}>
-							<img className="image" alt="Sajal Sharma" src={nike_store}></img>
-							<span className="location">Nike Store - Seattle, Washington</span>
-						</Col>
-
-						<Col className="mt-3" sm={12} md={6} lg={4}>
-							<img className="image" alt="Sajal Sharma" src={point_reyes}></img>
+							<img
+								className="image"
+								alt="Seattle, Washington"
+								src={nike_store}
+							></img>
 							<span className="location">
-								Nike Store - Point Reyes, Califronia
+								Nike Seattle - Seattle, Washington
 							</span>
 						</Col>
 
 						<Col className="mt-3" sm={12} md={6} lg={4}>
 							<img
 								className="image"
-								alt="Sajal Sharma"
-								src={redwood_trees}
+								alt="Inverness, California"
+								src={point_reyes}
 							></img>
 							<span className="location">
-								Redwood National Park - Somewhere, Califronia
+								Point Reyes Lighthouse - Inverness, California
 							</span>
+						</Col>
+
+						<Col className="mt-3" sm={12} md={6} lg={4}>
+							<img className="image" alt="California" src={redwood_trees}></img>
+							<span className="location">
+								Redwood National and State Park - California
+							</span>
+						</Col>
+
+						<Col className="mt-3" sm={12} md={6} lg={4}>
+							<img className="image" alt="California" src={barney_falls}></img>
+							<span className="location">Burney Falls - California</span>
 						</Col>
 
 						<Col className="mt-3" sm={12} md={6} lg={4}>
 							<img
 								className="image"
-								alt="Sajal Sharma"
-								src={barney_falls}
+								alt="Berkeley, California"
+								src={soda_hall}
 							></img>
-							<span className="location">
-								Barney Falls - Somewhere, Califronia
-							</span>
-						</Col>
-
-						<Col className="mt-3" sm={12} md={6} lg={4}>
-							<img className="image" alt="Sajal Sharma" src={soda_hall}></img>
 							<span className="location">
 								UC Berkeley - Berkeley, California
 							</span>
 						</Col>
 
 						<Col className="mt-3" sm={12} md={6} lg={4}>
-							<img className="image" alt="Sajal Sharma" src={clouds}></img>
+							<img
+								className="image"
+								alt="Haleakal&#257;, Hawaii"
+								src={clouds}
+							></img>
 							<span className="location">
 								Haleakal&#257; National Park - Haleakal&#257;, Hawaii
 							</span>

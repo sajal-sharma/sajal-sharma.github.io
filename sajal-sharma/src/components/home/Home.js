@@ -38,8 +38,8 @@ function Home() {
 							<p className="greeting">Hello, world! I'm Sajal!</p>
 
 							<p className="intro mb-0">
-								Welcome to my website! I'm currently a Computer Science,
-								Economics, and Data Science major at UC Berkeley.
+								Welcome to my website! I'm a recent UC Berkeley graduate living
+								in the Bay Area!
 							</p>
 						</div>
 					</Col>

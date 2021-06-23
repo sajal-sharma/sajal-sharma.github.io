@@ -53,14 +53,17 @@ function About() {
 
 							<p className="intro mt-3">
 								I recently graduated from the{" "}
-								<span className="underline">
-									University of California, Berkeley
-								</span>
-								, where I studied Computer Science, Economics, and Data Science.
-								Although I started programming just a few years ago, I've always
-								been in awe of the power and impact of technology. Hoping to use
-								my majors in a meaningful way, I'm primarily interested in
-								backend engineering and financial technology.
+								{/* <span className="underline"> */}
+								University of California, Berkeley
+								{/* </span> */}, where I studied Computer Science, Economics,
+								and Data Science. Although I started programming just a few
+								years ago, I've always been in awe of the power and impact of
+								technology. In the past two summers, I've interned at Apple and
+								VMware. I'm primarily interested in backend engineering and
+								financial technology.
+								{/* I'm currently working at{" "}
+								<span className="underline">Apple</span> as a backend Software
+								Engineer on the Core Services team. */}
 							</p>
 
 							<p className="intro">
@@ -72,17 +75,17 @@ function About() {
 							</p>
 
 							<p className="intro">
-								Aside from academics, I also enjoying playing basketball with my
-								friends and exploring the Bay Area. Over the quarantine, I also
-								became interested in photography.
+								Aside from academics, I enjoy playing basketball with my friends
+								and exploring new cities. Over the quarantine, I also became
+								interested in photography and reading.
 							</p>
 
-							<p className="intro mb-0">
+							{/* <p className="intro mb-0">
 								Currently reading: <span className="underline">Apartment</span>{" "}
 								by Teddy Wayne,{" "}
 								<span className="underline">Invisible Women</span> by Caroline
 								Criado Perez
-							</p>
+							</p> */}
 						</div>
 					</Col>
 				</Row>

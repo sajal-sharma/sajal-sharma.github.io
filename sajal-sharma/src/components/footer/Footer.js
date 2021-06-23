@@ -11,7 +11,7 @@ import { faEnvelope, faPaperclip } from "@fortawesome/free-solid-svg-icons";
 
 import "../../assets/css/styles.css";
 
-import resume from "../../assets/Sajal_Sharma_Resume.pdf";
+// import resume from "../../assets/Sajal_Sharma_Resume.pdf";
 
 function Footer() {
 	return (
@@ -20,29 +20,49 @@ function Footer() {
 				<Row className="content-row">
 					<Col sm={12} md={6}>
 						<div className="links">
-							<a href="https://www.facebook.com/ssajjall/">
+							<a
+								href="https://www.facebook.com/ssajjall/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<FontAwesomeIcon className="icon" icon={faFacebook} />
 							</a>
 
-							<a href="https://www.instagram.com/sightswithsaj/">
+							<a
+								href="https://www.instagram.com/sightswithsaj/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<FontAwesomeIcon className="icon" icon={faInstagram} />
 							</a>
 
-							<a href="https://www.linkedin.com/in/sajal-sharma/">
+							<a
+								href="https://www.linkedin.com/in/sajal-sharma/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<FontAwesomeIcon className="icon" icon={faLinkedinIn} />
 							</a>
 
-							<a href="https://github.com/sajal-sharma">
+							<a
+								href="https://github.com/sajal-sharma"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<FontAwesomeIcon className="icon" icon={faGithub} />
 							</a>
 
-							<a href="mailto:sharma.sajal@berkeley.edu">
+							<a
+								href="mailto:sharma.sajal@berkeley.edu"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<FontAwesomeIcon className="icon" icon={faEnvelope} />
 							</a>
 
-							<a href={resume}>
+							{/* <a href={resume}>
 								<FontAwesomeIcon className="icon" icon={faPaperclip} />
-							</a>
+							</a> */}
 						</div>
 					</Col>
 

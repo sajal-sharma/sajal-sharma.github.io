@@ -40,6 +40,14 @@ function Experience() {
 					<Col sm={12} md={8}>
 						<div className="entry">
 							<p className="title">Apple Inc.</p>
+							{/* <p className="date">July 2021 - Present &#xb7; Cupertino, CA</p>
+							<p className="position">Software Engineer </p>
+
+							<ul className="bullets">
+								<li className="bullet">Core Services</li>
+							</ul>
+
+							<p className="date mt-4"> */}
 							<p className="date">
 								May 2020 - August 2020 &#xb7; Cupertino, CA
 							</p>
@@ -110,16 +118,16 @@ function Experience() {
 					<Col sm={12} md={8}>
 						<div className="entry">
 							<p className="title">Computer Science Mentors</p>
-							<p className="date">January 2019 - Present</p>
+							<p className="date">January 2019 - May 2021</p>
 							<p className="position">Senior Mentor</p>
 
 							<ul className="bullets">
 								<li className="bullet">
-									Lead an adjunct section to help students strengthen their
+									Led an adjunct section to help students strengthen their
 									understanding of Discrete Mathematics and Probability Theory
 								</li>
 								<li className="bullet">
-									Present short lectures and guide students through
+									Presented short lectures and guided students through
 									problem-based worksheets to help improve their performance
 								</li>
 							</ul>

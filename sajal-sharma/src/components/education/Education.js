@@ -67,11 +67,15 @@ function Education() {
 							<ul className="bullets">
 								<li className="bullet">Microeconomic Analysis (ECON 100A)</li>
 								<li className="bullet">Macroeconomic Theory (ECON 101B)</li>
+								<li className="bullet">
+									Financial and Behavioral Economics (ECON 138)
+								</li>
 								<li className="bullet">Econometrics (ECON 140)</li>
 								<li className="bullet">International Trade (ECON C181)</li>
 								<li className="bullet">
 									International Monetary Economics (ECON 182)
 								</li>
+								<li className="bullet">Finance (UGBA 103)</li>
 								<li className="bullet">Investments (UGBA 133)</li>
 							</ul>
 
@@ -79,6 +83,9 @@ function Education() {
 							<p className="bullet">Coursework:</p>
 							<ul className="bullets">
 								<li className="bullet">Multivariable Calculus (MATH 53)</li>
+								<li className="bullet">
+									Principles and Techniques of Data Science (STAT C100)
+								</li>
 								<li className="bullet">
 									Probability for Data Science (STAT 140)
 								</li>
