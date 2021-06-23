@@ -40,14 +40,6 @@ function Experience() {
 					<Col sm={12} md={8}>
 						<div className="entry">
 							<p className="title">Apple Inc.</p>
-							{/* <p className="date">July 2021 - Present &#xb7; Cupertino, CA</p>
-							<p className="position">Software Engineer </p>
-
-							<ul className="bullets">
-								<li className="bullet">Core Services</li>
-							</ul>
-
-							<p className="date mt-4"> */}
 							<p className="date">
 								May 2020 - August 2020 &#xb7; Cupertino, CA
 							</p>

@@ -7,7 +7,9 @@ import {
 	faLinkedinIn,
 	faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faPaperclip } from "@fortawesome/free-solid-svg-icons";
+import {
+	faEnvelope /*, faPaperclip */,
+} from "@fortawesome/free-solid-svg-icons";
 
 import "../../assets/css/styles.css";
 

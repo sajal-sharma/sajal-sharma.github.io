@@ -52,18 +52,12 @@ function About() {
 							</Typist>
 
 							<p className="intro mt-3">
-								I recently graduated from the{" "}
-								{/* <span className="underline"> */}
-								University of California, Berkeley
-								{/* </span> */}, where I studied Computer Science, Economics,
-								and Data Science. Although I started programming just a few
-								years ago, I've always been in awe of the power and impact of
-								technology. In the past two summers, I've interned at Apple and
-								VMware. I'm primarily interested in backend engineering and
-								financial technology.
-								{/* I'm currently working at{" "}
-								<span className="underline">Apple</span> as a backend Software
-								Engineer on the Core Services team. */}
+								I recently graduated from the University of California,
+								Berkeley, where I studied Computer Science, Economics, and Data
+								Science. Although I started programming just a few years ago,
+								I've always been in awe of the power and impact of technology.
+								In the past, I've interned at Apple and VMware. I'm primarily
+								interested in backend engineering and financial technology.
 							</p>
 
 							<p className="intro">

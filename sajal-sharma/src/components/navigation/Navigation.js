@@ -36,7 +36,7 @@ export default class NavExample extends React.Component {
 	render() {
 		return (
 			<Navbar className="navbar" type="light" expand="md">
-				<NavbarBrand className="navbar-name" href="#/">
+				<NavbarBrand className="navbar-name" href="#/about">
 					Sajal Sharma
 				</NavbarBrand>
 
@@ -44,11 +44,11 @@ export default class NavExample extends React.Component {
 
 				<Collapse className="collapse" open={this.state.collapseOpen} navbar>
 					<Nav navbar>
-						<NavItem>
+						{/* <NavItem>
 							<NavLink className="navbar-link" href="#/">
 								Home
 							</NavLink>
-						</NavItem>
+						</NavItem> */}
 
 						<NavItem>
 							<NavLink className="navbar-link" href="#/about">

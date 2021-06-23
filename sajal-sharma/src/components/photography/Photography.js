@@ -27,15 +27,7 @@ function Photography() {
 			distance: "1em",
 		};
 
-		const entryOptions = {
-			origin: "right",
-			duration: 1000,
-			delay: 250,
-			distance: "1em",
-		};
-
 		ScrollReveal().reveal(".header", headerOptions);
-		ScrollReveal().reveal(".entry", entryOptions);
 	}, []);
 
 	return (
