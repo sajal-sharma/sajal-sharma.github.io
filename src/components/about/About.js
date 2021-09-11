@@ -116,7 +116,7 @@ function About() {
 				</Row>
 			</Container>
 
-			<div className="bottom">
+			<div className="about-bottom">
 				<Footer />
 			</div>
 		</div>

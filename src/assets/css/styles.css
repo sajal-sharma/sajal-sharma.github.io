@@ -188,6 +188,14 @@
 } */
 
 /* About */
+@media (min-width: 768px) {
+	.about-bottom {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+}
+
 .typist .Cursor {
 	display: inline-block;
 }
