@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1f770df3.chunk.css",
+    "main.js": "/static/js/main.66ad4124.chunk.js",
+    "main.js.map": "/static/js/main.66ad4124.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.50ee2953.js",
+    "runtime-main.js.map": "/static/js/runtime-main.50ee2953.js.map",
+    "static/css/2.90f5f49e.chunk.css": "/static/css/2.90f5f49e.chunk.css",
+    "static/js/2.b0343ece.chunk.js": "/static/js/2.b0343ece.chunk.js",
+    "static/js/2.b0343ece.chunk.js.map": "/static/js/2.b0343ece.chunk.js.map",
+    "static/js/3.739f5061.chunk.js": "/static/js/3.739f5061.chunk.js",
+    "static/js/3.739f5061.chunk.js.map": "/static/js/3.739f5061.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.90f5f49e.chunk.css.map": "/static/css/2.90f5f49e.chunk.css.map",
+    "static/css/main.1f770df3.chunk.css.map": "/static/css/main.1f770df3.chunk.css.map",
+    "static/js/2.b0343ece.chunk.js.LICENSE.txt": "/static/js/2.b0343ece.chunk.js.LICENSE.txt",
+    "static/media/acropolis.bc072329.jpg": "/static/media/acropolis.bc072329.jpg",
+    "static/media/barney_falls.35f2ad69.jpg": "/static/media/barney_falls.35f2ad69.jpg",
+    "static/media/berkeley_northside.34b2d952.jpg": "/static/media/berkeley_northside.34b2d952.jpg",
+    "static/media/clouds.b26e4912.jpg": "/static/media/clouds.b26e4912.jpg",
+    "static/media/engineering_building.7e93bfd7.jpg": "/static/media/engineering_building.7e93bfd7.jpg",
+    "static/media/galaries_lafayette.46685b69.jpg": "/static/media/galaries_lafayette.46685b69.jpg",
+    "static/media/mountain_view.3702fbe0.jpg": "/static/media/mountain_view.3702fbe0.jpg",
+    "static/media/musee_oceanographique.450d91f9.jpg": "/static/media/musee_oceanographique.450d91f9.jpg",
+    "static/media/nike_store.c910f890.jpg": "/static/media/nike_store.c910f890.jpg",
+    "static/media/palais_princier.6980a8b8.jpg": "/static/media/palais_princier.6980a8b8.jpg",
+    "static/media/point_reyes.8fe7e209.jpg": "/static/media/point_reyes.8fe7e209.jpg",
+    "static/media/redwood_trees.5bcaf17d.jpg": "/static/media/redwood_trees.5bcaf17d.jpg",
+    "static/media/santa_cruz.3743f90b.jpg": "/static/media/santa_cruz.3743f90b.jpg",
+    "static/media/shoreline_park.056eb29d.jpg": "/static/media/shoreline_park.056eb29d.jpg",
+    "static/media/snoqualmire_falls.5ece20ee.jpg": "/static/media/snoqualmire_falls.5ece20ee.jpg",
+    "static/media/soda_hall.d8f52701.jpg": "/static/media/soda_hall.d8f52701.jpg",
+    "static/media/south_hall.4d8e95db.jpg": "/static/media/south_hall.4d8e95db.jpg",
+    "static/media/theater_of_dionysus.322be3df.jpg": "/static/media/theater_of_dionysus.322be3df.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.50ee2953.js",
+    "static/css/2.90f5f49e.chunk.css",
+    "static/js/2.b0343ece.chunk.js",
+    "static/css/main.1f770df3.chunk.css",
+    "static/js/main.66ad4124.chunk.js"
+  ]
+}

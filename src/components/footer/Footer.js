@@ -1,39 +1,30 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faFacebook,
-	faInstagram,
-	faLinkedinIn,
-	faGithub,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faPortrait } from "@fortawesome/free-solid-svg-icons";
+import { Instagram, Book, Linkedin, GitHub, Mail } from "react-feather";
 
 import "../../assets/css/styles.css";
-
-import resume from "../../assets/Sajal_Sharma_Resume.pdf";
 
 function Footer() {
 	return (
 		<div>
 			<Container className="footer" fluid>
-				<Row className="content-row">
+				<Row>
 					<Col sm={12} md={6}>
 						<div className="links">
 							<a
-								href="https://www.facebook.com/ssajjall/"
+								href="https://www.instagram.com/sajal.jpg/"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<FontAwesomeIcon className="icon" icon={faFacebook} />
+								<Instagram className="icon ml-0" size={20} />
 							</a>
 
 							<a
-								href="https://www.instagram.com/sightswithsaj/"
+								href="https://www.goodreads.com/sajal-sharma"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<FontAwesomeIcon className="icon" icon={faInstagram} />
+								<Book className="icon" size={20} />
 							</a>
 
 							<a
@@ -41,7 +32,7 @@ function Footer() {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<FontAwesomeIcon className="icon" icon={faLinkedinIn} />
+								<Linkedin className="icon" size={20} />
 							</a>
 
 							<a
@@ -49,7 +40,7 @@ function Footer() {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<FontAwesomeIcon className="icon" icon={faGithub} />
+								<GitHub className="icon" size={20} />
 							</a>
 
 							<a
@@ -57,17 +48,13 @@ function Footer() {
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								<FontAwesomeIcon className="icon" icon={faEnvelope} />
-							</a>
-
-							<a href={resume} target="_blank" rel="noopener noreferrer">
-								<FontAwesomeIcon className="icon" icon={faPortrait} />
+								<Mail className="icon" size={20} />
 							</a>
 						</div>
 					</Col>
 
 					<Col sm={12} md={6}>
-						<p className="copyright">&#169; 2021 Sajal Sharma</p>
+						<p className="copyright">&#169; 2023 Sajal Sharma</p>
 					</Col>
 				</Row>
 			</Container>
