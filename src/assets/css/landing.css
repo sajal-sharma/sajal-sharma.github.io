@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+.greeting {
+	color: black !important;
+	font-family: "Questrial", sans-serif;
+	font-size: xxx-large;
+	font-weight: 600;
+	text-align: left;
+}
+
+.intro {
+	color: black !important;
+	font-family: "Questrial", sans-serif;
+	font-size: medium;
+	font-weight: 400;
+	text-align: left;
+}
+
+.underline {
+	color: dimgray;
+	text-decoration: none;
+}
+
+.underline:hover {
+	color: #ff5c59;
+	text-decoration: none;
+}

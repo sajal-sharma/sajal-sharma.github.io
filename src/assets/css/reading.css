@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+.books {
+	width: 100%;
+}
+
+.year {
+	color: black !important;
+	font-family: "Questrial", sans-serif;
+	font-size: medium;
+	font-weight: 600;
+	text-align: left;
+}
+
+.title {
+	color: black !important;
+	font-family: "Questrial", sans-serif;
+	font-size: small;
+	font-weight: 400;
+	text-align: left;
+}
+
+.author {
+	color: black !important;
+	font-family: "Questrial", sans-serif;
+	font-size: small;
+	font-weight: 400;
+	text-align: left;
+}
+
+.date {
+	color: black !important;
+	font-family: "Questrial", sans-serif;
+	font-size: small;
+	font-weight: 400;
+	text-align: left;
+}
+
+.rating {
+	position: absolute;
+	text-align: left;
+}
+
+.circle {
+	top: 50%;
+	right: 0;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.circle-spacing {
+	margin-right: 2px;
+}
+
+/* Common styles needed for Reading page */
+.header {
+	color: black !important;
+	font-family: "Questrial", sans-serif;
+	font-size: xx-large;
+	font-weight: 600;
+	text-align: left;
+}
+
+.intro {
+	color: black !important;
+	font-family: "Questrial", sans-serif;
+	font-size: medium;
+	font-weight: 400;
+	text-align: left;
+}

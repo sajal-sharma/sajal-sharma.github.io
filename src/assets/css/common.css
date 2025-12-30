@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+.page-container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.content-container {
+	flex-direction: column;
+	margin: 0 auto;
+	width: 90%;
+	display: flex;
+	flex: 1;
+}
+
+@media (min-width: 768px) {
+	.content-container {
+		width: 80%;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 1200px) {
+	.content-container {
+		width: 60%;
+	}
+}
+
+.footer-container {
+	margin: auto;
+}
+
+@media (min-width: 768px) {
+	.footer-container {
+		width: 80%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.footer-container {
+		width: 60%;
+	}
+}

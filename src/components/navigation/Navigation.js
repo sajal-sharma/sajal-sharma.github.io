@@ -11,7 +11,7 @@ import {
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "shards-ui/dist/css/shards.min.css";
-import "../../assets/css/styles.css";
+import "../../assets/css/navigation.css";
 
 export default class NavExample extends React.Component {
 	constructor(props) {
