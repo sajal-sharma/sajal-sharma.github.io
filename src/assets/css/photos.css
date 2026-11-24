@@ -114,7 +114,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: var(--accent);
+	color: var(--scarlet-red);
 }
 
 /* An open circle: a 2px ring with one quarter left out, turning once a second. */
