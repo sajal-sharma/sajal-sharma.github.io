@@ -87,6 +87,7 @@
 }
 
 .viewer-figure {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -95,11 +96,42 @@
 	margin: 0;
 }
 
-.viewer-figure img {
+.viewer-image {
 	flex: 1;
 	min-height: 0;
 	max-width: 100%;
 	object-fit: contain;
+}
+
+/* Hidden until it has loaded; the spinner holds its place meanwhile. */
+.viewer-image.is-loading {
+	visibility: hidden;
+}
+
+.viewer-spinner {
+	position: absolute;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--accent);
+}
+
+.viewer-spinner svg {
+	animation: viewer-spin 1s linear infinite;
+}
+
+@keyframes viewer-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* With reduced motion the spinner turns slowly instead of stopping, so it still reads as loading. */
+@media (prefers-reduced-motion: reduce) {
+	.viewer-spinner svg {
+		animation-duration: 4s;
+	}
 }
 
 .viewer-caption {

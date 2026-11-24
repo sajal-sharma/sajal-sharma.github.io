@@ -40,3 +40,16 @@ test("wraps from the last photo back to the first", () => {
 	fireEvent.click(screen.getByRole("button", { name: "Next photo" }));
 	expect(screen.getByRole("dialog", { name: "Point Reyes" })).toBeInTheDocument();
 });
+
+test("shows a spinner until each photo loads", () => {
+	render(<Harness start={0} />);
+
+	expect(screen.getByRole("status", { name: "Loading photo" })).toBeInTheDocument();
+	fireEvent.load(screen.getByRole("img", { name: "Point Reyes" }));
+	expect(screen.queryByRole("status", { name: "Loading photo" })).not.toBeInTheDocument();
+
+	fireEvent.click(screen.getByRole("button", { name: "Next photo" }));
+	expect(screen.getByRole("status", { name: "Loading photo" })).toBeInTheDocument();
+	fireEvent.load(screen.getByRole("img", { name: "Santa Cruz" }));
+	expect(screen.queryByRole("status", { name: "Loading photo" })).not.toBeInTheDocument();
+});
