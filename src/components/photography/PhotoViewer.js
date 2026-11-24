@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, X } from "react-feather";
 
 import responsiveImage, { VIEWER_SIZES, VIEWER_WIDTHS } from "./responsiveImage";
@@ -6,10 +6,20 @@ import responsiveImage, { VIEWER_SIZES, VIEWER_WIDTHS } from "./responsiveImage"
 import "../../assets/css/photos.css";
 
 // Full-screen view of one photo. Arrow keys step through the set, Escape closes,
-// and focus returns to whatever opened the viewer.
+// and focus returns to whatever opened the viewer. A spinner shows until each photo has loaded.
 function PhotoViewer({ photos, index, onChange, onClose }) {
 	const closeRef = useRef(null);
 	const photo = photos[index];
+	const [loadedSrc, setLoadedSrc] = useState(null);
+	const isLoading = loadedSrc !== photo.src;
+	const markLoaded = () => setLoadedSrc(photo.src);
+
+	// A photo already in the browser cache can finish before React attaches onLoad, so check on mount.
+	const imageRef = (img) => {
+		if (img && img.complete && img.naturalWidth > 0 && loadedSrc !== photo.src) {
+			setLoadedSrc(photo.src);
+		}
+	};
 
 	const step = (offset) => onChange((index + offset + photos.length) % photos.length);
 
@@ -66,7 +76,20 @@ function PhotoViewer({ photos, index, onChange, onClose }) {
 			</button>
 
 			<figure className="viewer-figure">
-				<img {...responsiveImage(photo.src, VIEWER_WIDTHS, VIEWER_SIZES)} alt={photo.caption} />
+				{isLoading && (
+					<div className="viewer-spinner" role="status" aria-label="Loading photo">
+						<span className="viewer-spinner-ring" aria-hidden="true" />
+					</div>
+				)}
+				<img
+					key={photo.src}
+					ref={imageRef}
+					{...responsiveImage(photo.src, VIEWER_WIDTHS, VIEWER_SIZES)}
+					alt={photo.caption}
+					className={isLoading ? "viewer-image is-loading" : "viewer-image"}
+					onLoad={markLoaded}
+					onError={markLoaded}
+				/>
 				<figcaption className="viewer-caption">{photo.caption}</figcaption>
 			</figure>
 
