@@ -117,7 +117,13 @@
 	color: var(--accent);
 }
 
-.viewer-spinner svg {
+/* An open circle: a 2px ring with one quarter left out, turning once a second. */
+.viewer-spinner-ring {
+	width: 28px;
+	height: 28px;
+	border: 2px solid currentColor;
+	border-top-color: transparent;
+	border-radius: 50%;
 	animation: viewer-spin 1s linear infinite;
 }
 
@@ -129,7 +135,7 @@
 
 /* With reduced motion the spinner turns slowly instead of stopping, so it still reads as loading. */
 @media (prefers-reduced-motion: reduce) {
-	.viewer-spinner svg {
+	.viewer-spinner-ring {
 		animation-duration: 4s;
 	}
 }

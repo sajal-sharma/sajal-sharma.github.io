@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { ChevronLeft, ChevronRight, Loader, X } from "react-feather";
+import { ChevronLeft, ChevronRight, X } from "react-feather";
 
 import responsiveImage, { VIEWER_SIZES, VIEWER_WIDTHS } from "./responsiveImage";
 
@@ -78,7 +78,7 @@ function PhotoViewer({ photos, index, onChange, onClose }) {
 			<figure className="viewer-figure">
 				{isLoading && (
 					<div className="viewer-spinner" role="status" aria-label="Loading photo">
-						<Loader size={28} aria-hidden="true" />
+						<span className="viewer-spinner-ring" aria-hidden="true" />
 					</div>
 				)}
 				<img
