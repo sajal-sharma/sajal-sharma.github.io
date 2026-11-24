@@ -11,3 +11,5 @@ specs/
 # macOS folder metadata and the ESLint cache.
 .DS_Store
 .eslintcache
+.vercel
+.env*
