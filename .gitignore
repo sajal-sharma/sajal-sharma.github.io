@@ -7,3 +7,7 @@ design
 
 # Planning specs from the brainstorm and plan skills.
 specs/
+
+# macOS folder metadata and the ESLint cache.
+.DS_Store
+.eslintcache
