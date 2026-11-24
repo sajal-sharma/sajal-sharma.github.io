@@ -44,11 +44,11 @@ function PhotoViewer({ photos, index, onChange, onClose }) {
 
 	return (
 		<div className="viewer" role="dialog" aria-modal="true" aria-label={photo.caption}>
-			<div className="viewer__top">
+			<div className="viewer-top">
 				<button
 					ref={closeRef}
 					type="button"
-					className="viewer__control"
+					className="viewer-control"
 					aria-label="Close photo"
 					onClick={onClose}
 				>
@@ -58,21 +58,21 @@ function PhotoViewer({ photos, index, onChange, onClose }) {
 
 			<button
 				type="button"
-				className="viewer__control"
+				className="viewer-control"
 				aria-label="Previous photo"
 				onClick={() => step(-1)}
 			>
 				<ChevronLeft size={28} aria-hidden="true" />
 			</button>
 
-			<figure className="viewer__figure">
+			<figure className="viewer-figure">
 				<img {...responsiveImage(photo.src, VIEWER_WIDTHS, VIEWER_SIZES)} alt={photo.caption} />
-				<figcaption className="viewer__caption">{photo.caption}</figcaption>
+				<figcaption className="viewer-caption">{photo.caption}</figcaption>
 			</figure>
 
 			<button
 				type="button"
-				className="viewer__control"
+				className="viewer-control"
 				aria-label="Next photo"
 				onClick={() => step(1)}
 			>

@@ -7,23 +7,23 @@
 	padding: var(--space-xxl) var(--cell-pad-x);
 }
 
-.footer__links {
+.footer-links {
 	display: flex;
 	margin-left: calc(-1 * var(--space-md));
 }
 
-.footer__link {
+.footer-link {
 	display: inline-flex;
 	padding: var(--space-md);
 	color: var(--accent);
 }
 
-.footer__link:hover,
-.footer__link:focus-visible {
+.footer-link:hover,
+.footer-link:focus-visible {
 	color: var(--ink);
 }
 
-.footer__copyright {
+.footer-copyright {
 	color: var(--ink);
 	font-size: 14px;
 	line-height: 20px;

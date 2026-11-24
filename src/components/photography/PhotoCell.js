@@ -10,7 +10,7 @@ function PhotoCell({ photo, onOpen }) {
 		<figure className="photo-cell">
 			<button
 				type="button"
-				className="photo-cell__open"
+				className="photo-cell-open"
 				aria-label={`Open photo of ${photo.caption}`}
 				onClick={onOpen}
 			>

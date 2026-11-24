@@ -25,13 +25,13 @@ const LINKS = [
 function Footer() {
 	return (
 		<footer className="footer">
-			<div className="footer__links">
+			<div className="footer-links">
 				{LINKS.map(({ label, href, Icon }) => {
 					const external = !href.startsWith("mailto:");
 					return (
 						<a
 							key={label}
-							className="footer__link"
+							className="footer-link"
 							href={href}
 							aria-label={label}
 							target={external ? "_blank" : undefined}
@@ -42,7 +42,7 @@ function Footer() {
 					);
 				})}
 			</div>
-			<p className="footer__copyright">&#169; 2027 Sajal Sharma</p>
+			<p className="footer-copyright">&#169; 2027 Sajal Sharma</p>
 		</footer>
 	);
 }

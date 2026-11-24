@@ -21,7 +21,7 @@
 	background: linear-gradient(180deg, var(--sky-blue) 0%, var(--cloud-white) 100%);
 }
 
-.hero__name {
+.hero-name {
 	margin: 0;
 	color: var(--ink);
 	font-size: 72px;
@@ -30,7 +30,7 @@
 	letter-spacing: -2px;
 }
 
-.hero__text {
+.hero-text {
 	display: flex;
 	flex-direction: column;
 	gap: var(--space-base);
@@ -47,7 +47,7 @@
 }
 
 @media (max-width: 767px) {
-	.hero__name {
+	.hero-name {
 		font-size: 40px;
 		line-height: 46px;
 	}

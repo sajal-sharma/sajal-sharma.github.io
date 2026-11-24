@@ -12,8 +12,8 @@ function Landing() {
 	return (
 		<div className="frame">
 			<header className="hero">
-				<h1 className="hero__name">Hi, I'm Sajal.</h1>
-				<div className="hero__text">
+				<h1 className="hero-name">Hi, I'm Sajal.</h1>
+				<div className="hero-text">
 					<p>
 						I'm a software engineer on the Wallets, Payments, and Commerce team at Apple. I
 						graduated from the University of California, Berkeley in 2021 with a triple major
