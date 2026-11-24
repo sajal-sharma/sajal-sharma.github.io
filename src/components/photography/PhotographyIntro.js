@@ -16,13 +16,13 @@ function PhotographyIntro({ linkToGallery = false }) {
 				<h2 id="photography-heading" className="photography-heading">
 					<Link className="photography-link" to={PHOTOGRAPHY_PATH}>
 						Photography
-						<ArrowRight size={24} aria-hidden="true" />
+						<ArrowRight size={22} aria-hidden="true" />
 					</Link>
 				</h2>
 			) : (
 				<div className="photography-title">
 					<Link className="photography-back" to={HOME_PATH} aria-label="Back to home">
-						<ArrowLeft size={24} aria-hidden="true" />
+						<ArrowLeft size={22} aria-hidden="true" />
 					</Link>
 					<h2 id="photography-heading" className="photography-heading">
 						Photography
