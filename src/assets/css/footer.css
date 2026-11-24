@@ -15,7 +15,7 @@
 .footer-link {
 	display: inline-flex;
 	padding: var(--space-md);
-	color: var(--accent);
+	color: var(--scarlet-red);
 }
 
 .footer-link:hover,
@@ -27,4 +27,16 @@
 	color: var(--ink);
 	font-size: 14px;
 	line-height: 20px;
+}
+
+/* On phones the icons and copyright stack, centered under each other. */
+@media (max-width: 767px) {
+	.footer {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.footer-links {
+		margin-left: 0;
+	}
 }
