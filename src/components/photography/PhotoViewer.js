@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, X } from "react-feather";
 
+import responsiveImage, { VIEWER_SIZES, VIEWER_WIDTHS } from "./responsiveImage";
+
 import "../../assets/css/photos.css";
 
 // Full-screen view of one photo. Arrow keys step through the set, Escape closes,
@@ -64,7 +66,7 @@ function PhotoViewer({ photos, index, onChange, onClose }) {
 			</button>
 
 			<figure className="viewer__figure">
-				<img src={photo.src} alt={photo.caption} />
+				<img {...responsiveImage(photo.src, VIEWER_WIDTHS, VIEWER_SIZES)} alt={photo.caption} />
 				<figcaption className="viewer__caption">{photo.caption}</figcaption>
 			</figure>
 
