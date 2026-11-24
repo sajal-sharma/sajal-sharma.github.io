@@ -1,27 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-
-.greeting {
-	color: black !important;
-	font-family: "Questrial", sans-serif;
-	font-size: xxx-large;
-	font-weight: 600;
-	text-align: left;
+/* The hero fills the first screen; the photography section and footer follow. */
+.frame {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	min-height: 100svh;
 }
 
-.intro {
-	color: black !important;
-	font-family: "Questrial", sans-serif;
-	font-size: medium;
-	font-weight: 400;
-	text-align: left;
+/* Hero: Sky Blue fading to Cloud White, name left, the owner's prose right. */
+.hero {
+	flex: 1;
+	min-height: 100vh;
+	min-height: 100svh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--space-xl);
+	align-items: center;
+	align-content: end;
+	padding: var(--cell-pad-y) var(--cell-pad-x);
+	border-bottom: 1px solid var(--frame);
+	background: linear-gradient(180deg, var(--sky-blue) 0%, var(--cloud-white) 100%);
 }
 
-.underline {
-	color: dimgray;
-	text-decoration: none;
+.hero-name {
+	margin: 0;
+	color: var(--ink);
+	font-size: 72px;
+	font-weight: 500;
+	line-height: 78px;
+	letter-spacing: -2px;
 }
 
-.underline:hover {
-	color: #ff5c59;
-	text-decoration: none;
+.hero-text {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-base);
+	max-width: 560px;
+	color: var(--ink);
+	font-size: 18px;
+	line-height: 28px;
+}
+
+@media (max-width: 1023px) {
+	.hero {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 767px) {
+	.hero-name {
+		font-size: 40px;
+		line-height: 46px;
+	}
 }

@@ -1,0 +1,20 @@
+{
+	"$schema": "https://openapi.vercel.sh/vercel.json",
+	"framework": "create-react-app",
+	"installCommand": "npm ci",
+	"buildCommand": "REACT_APP_VERCEL_IMAGES=true npm run build",
+	"outputDirectory": "build",
+	"images": {
+		"sizes": [640, 960, 1280, 1920, 2560, 3840],
+		"qualities": [80],
+		"formats": ["image/avif", "image/webp"],
+		"minimumCacheTTL": 2678400,
+		"localPatterns": [{ "pathname": "^/static/media/.*$", "search": "" }]
+	},
+	"headers": [
+		{
+			"source": "/static/(.*)",
+			"headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+		}
+	]
+}

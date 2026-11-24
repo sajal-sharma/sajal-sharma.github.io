@@ -1,3 +1,15 @@
 node_modules/
 build/
 .idea/
+
+# Design language: a link to ~/Documents/Claude/designs/sajal-sharma, kept locally, never committed.
+design
+
+# Planning specs from the brainstorm and plan skills.
+specs/
+
+# macOS folder metadata and the ESLint cache.
+.DS_Store
+.eslintcache
+.vercel
+.env*

@@ -1,160 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-
-.photography-center {
-	padding: 0;
-	margin: auto;
-	width: 90%;
+/* Photography intro: same two columns as the hero, heading left, intro right. */
+.photography-intro {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--space-xl);
+	align-items: center;
+	padding: var(--space-xxl) var(--cell-pad-x);
+	border-bottom: 1px solid var(--frame);
 }
 
-@media (min-width: 768px) {
-	.photography-center {
-		width: 80%;
+.photography-heading {
+	margin: 0;
+	color: var(--ink);
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 40px;
+}
+
+.photography-text {
+	max-width: 560px;
+	color: var(--ink);
+	font-size: 18px;
+	line-height: 28px;
+}
+
+@media (max-width: 1023px) {
+	.photography-intro {
+		grid-template-columns: 1fr;
+		gap: var(--space-md);
 	}
 }
 
-@media (min-width: 1200px) {
-	.photography-center {
-		width: 60%;
+@media (max-width: 767px) {
+	.photography-heading {
+		font-size: 22px;
+		line-height: 30px;
 	}
 }
 
-.back-paragraph {
-	font-family: "Open Sans", sans-serif;
-	font-size: medium;
-	font-weight: 600;
-	text-align: left;
+/* On the home page the heading is a square, Scarlet Red button that links to the gallery.
+   Paper text and arrow; on hover the arrow turns ink and slides right. */
+.photography-link {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--space-md);
+	padding: var(--space-md) var(--space-lg);
+	border-radius: 0;
+	background: var(--accent);
+	color: var(--paper);
+	text-decoration: none;
 }
 
-.back-button {
-	color: black;
+.photography-link:focus-visible {
+	outline-color: var(--ink);
 }
 
-.back-button:hover {
-	color: black;
-	text-decoration: underline;
+.photography-link svg {
+	color: var(--paper);
+	transition: transform 150ms ease, color 150ms ease;
 }
 
-.header {
-	color: black !important;
-	font-family: "Questrial", sans-serif;
-	font-size: xx-large;
-	font-weight: 600;
-	text-align: left;
+.photography-link:hover svg,
+.photography-link:focus-visible svg {
+	color: var(--ink);
+	transform: translateX(4px);
 }
 
-.gallery-cover {
-	position: relative;
-	max-width: 100%;
-	padding: 0;
-	cursor: pointer;
-	overflow: hidden;
-	transition: transform 0.2s ease;
-}
-
-.gallery-cover:hover {
-	transform: scale(.99);
-}
-
-.gallery-cover-image {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.gallery-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: rgba(0, 0, 0, 0.6);
+/* On the gallery: an arrow-only square button beside the heading that leads home. It mirrors the
+   home page button: Scarlet Red fill, paper arrow that turns ink and slides left on hover. */
+.photography-title {
 	display: flex;
+	align-items: center;
+	gap: var(--space-base);
+}
+
+.photography-back {
+	display: inline-flex;
+	flex: none;
+	align-items: center;
 	justify-content: center;
-	align-items: center;
+	width: 64px;
+	height: 64px;
+	border-radius: 0;
+	background: var(--accent);
+	color: var(--paper);
 }
 
-.gallery-title {
-	color: white;
-	font-family: "Questrial", sans-serif;
-	font-size: x-large;
-	font-weight: 400;
-	text-align: center;
+.photography-back:focus-visible {
+	outline-color: var(--ink);
 }
 
-.image {
-	max-width: 100%;
-	padding: 0;
+.photography-back svg {
+	transition: transform 150ms ease, color 150ms ease;
 }
 
-.location {
-	color: black;
-	font-family: "Questrial", sans-serif;
-	font-size: x-small;
-	font-weight: 400;
-	text-align: center;
-}
-
-.clickable-image {
-	transition: transform 0.2s ease;
-}
-
-.clickable-image:hover {
-	transform: scale(.99);
-}
-
-.enlarged-image-overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.85);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 1000;
-}
-
-.enlarged-image-content {
-	position: relative;
-	max-width: 100%;
-	max-height: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.enlarged-image {
-	max-width: 100%;
-	max-height: 85vh;
-	object-fit: contain;
-}
-
-.enlarged-image-close-button {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	background: rgba(255, 255, 255, 0.5);
-	border: none;
-	border-radius: 50%;
-	width: 24px;
-	height: 24px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	transition: transform 0.2s ease;
-	z-index: 1001;
-}
-
-.enlarged-image-close-button:hover {
-	transform: scale(.95);
-}
-
-.caption {
-	color: white;
-	font-family: "Questrial", sans-serif;
-	font-size: x-small;
-	font-weight: 400;
-	text-align: center;
+.photography-back:hover svg,
+.photography-back:focus-visible svg {
+	color: var(--ink);
+	transform: translateX(-4px);
 }
