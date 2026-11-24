@@ -1,64 +1,49 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { Instagram, Book, Linkedin, GitHub, Mail } from "react-feather";
+import { Book, Coffee, Film, Instagram, Linkedin, Mail } from "react-feather";
+
+import {
+	BELI_URL,
+	EMAIL_URL,
+	GOODREADS_URL,
+	INSTAGRAM_URL,
+	LETTERBOXD_URL,
+	LINKEDIN_URL,
+} from "../../content/links";
 
 import "../../assets/css/footer.css";
 
+// Footer icons, in display order.
+const LINKS = [
+	{ label: "Instagram", href: INSTAGRAM_URL, Icon: Instagram },
+	{ label: "Beli", href: BELI_URL, Icon: Coffee },
+	{ label: "Letterboxd", href: LETTERBOXD_URL, Icon: Film },
+	{ label: "Goodreads", href: GOODREADS_URL, Icon: Book },
+	{ label: "LinkedIn", href: LINKEDIN_URL, Icon: Linkedin },
+	{ label: "Email", href: EMAIL_URL, Icon: Mail },
+];
+
 function Footer() {
 	return (
-		<div>
-			<Container className="footer" fluid>
-				<Row>
-					<Col sm={12} md={6}>
-						<div className="links">
-							{/*<a*/}
-							{/*	href="https://www.instagram.com/sajal.jpg/"*/}
-							{/*	target="_blank"*/}
-							{/*	rel="noopener noreferrer"*/}
-							{/*>*/}
-							{/*	<Instagram className="icon ml-0" size={20} />*/}
-							{/*</a>*/}
-
-							{/*<a*/}
-							{/*	href="https://www.goodreads.com/sajal-sharma"*/}
-							{/*	target="_blank"*/}
-							{/*	rel="noopener noreferrer"*/}
-							{/*>*/}
-							{/*	<Book className="icon" size={20} />*/}
-							{/*</a>*/}
-
-							<a
-								href="https://www.linkedin.com/in/sajal-sharma/"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<Linkedin className="icon ml-1" size={20} />
-							</a>
-
-							{/*<a*/}
-							{/*	href="https://github.com/sajal-sharma"*/}
-							{/*	target="_blank"*/}
-							{/*	rel="noopener noreferrer"*/}
-							{/*>*/}
-							{/*	<GitHub className="icon" size={20} />*/}
-							{/*</a>*/}
-
-							<a
-								href="mailto:sajal16.sharma@gmail.com"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								<Mail className="icon" size={20} />
-							</a>
-						</div>
-					</Col>
-
-					<Col className="pr-0" xs={12} md={6}>
-						<p className="copyright">&#169; 2026 Sajal Sharma</p>
-					</Col>
-				</Row>
-			</Container>
-		</div>
+		<footer className="footer">
+			<div className="footer__links">
+				{LINKS.map(({ label, href, Icon }) => {
+					const external = !href.startsWith("mailto:");
+					return (
+						<a
+							key={label}
+							className="footer__link"
+							href={href}
+							aria-label={label}
+							target={external ? "_blank" : undefined}
+							rel={external ? "noopener noreferrer" : undefined}
+						>
+							<Icon size={20} aria-hidden="true" />
+						</a>
+					);
+				})}
+			</div>
+			<p className="footer__copyright">&#169; 2027 Sajal Sharma</p>
+		</footer>
 	);
 }
 

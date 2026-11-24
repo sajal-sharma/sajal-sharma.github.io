@@ -1,44 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+/* Design tokens. Values mirror the Sajal Sharma design language file. */
+:root {
+	--sky-blue: #0e7bc1;
+	--cloud-white: #ffefef;
+	--paper: #fdfdfe;
+	--panel: #f5f5f6;
+	--accent: #f23b42;
+	--ink: #070a0d;
+	--light-ink: #a5a6a4;
+	--frame: #ceced3;
 
-.page-container {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
+	--font: "Figtree", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+	--space-sm: 8px;
+	--space-md: 12px;
+	--space-base: 20px;
+	--space-lg: 24px;
+	--space-xl: 30px;
+	--space-xxl: 48px;
+	--space-xxxl: 72px;
+	--space-section: 105px;
+
+	--frame-inset: var(--space-xl);
+	--cell-pad-y: var(--space-section);
+	--cell-pad-x: var(--space-xl);
 }
 
-.content-container {
-	flex-direction: column;
-	margin: 0 auto;
-	width: 90%;
-	display: flex;
-	flex: 1;
-}
-
-@media (min-width: 768px) {
-	.content-container {
-		width: 80%;
-		justify-content: center;
+@media (max-width: 767px) {
+	:root {
+		--frame-inset: 16px;
+		--cell-pad-y: var(--space-xxxl);
+		--cell-pad-x: var(--space-base);
 	}
 }
 
-@media (min-width: 1200px) {
-	.content-container {
-		width: 60%;
-	}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
-.footer-container {
-	margin: auto;
+body {
+	margin: 0;
+	background: var(--cloud-white);
+	color: var(--ink);
+	font-family: var(--font);
+	font-size: 16px;
+	line-height: 24px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
-@media (min-width: 768px) {
-	.footer-container {
-		width: 80%;
-	}
+p {
+	margin: 0;
 }
 
-@media (min-width: 1200px) {
-	.footer-container {
-		width: 60%;
+:focus-visible {
+	outline: 2px solid var(--accent);
+	outline-offset: 2px;
+}
+
+/* The ruled frame every block sits in. */
+.frame {
+	margin: 0 var(--frame-inset);
+	border-left: 1px solid var(--frame);
+	border-right: 1px solid var(--frame);
+}
+
+/* Respect reduced motion: no slides or fades. */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		transition: none !important;
 	}
 }
